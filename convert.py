@@ -67,27 +67,29 @@ minhas_habilidades = [h['skill'].lower() for h in meu_curriculo['habilidades']]
 habilidades_em_comum = set(palavras_chave_vaga) & set(minhas_habilidades) ## Interseção de Conjuntos
 
 
-## Puxar os valores da minha tag para uma lista
-minhas_experiencias = [e['tags'] for e in meu_curriculo['experiencias']]
-print(minhas_experiencias)
+
+experiencias_relevantes = []
+for experiencia in meu_curriculo['experiencias']:
+    tags_da_experiencia = set(experiencia['tags'])
+
+    if tags_da_experiencia.intersection(habilidades_em_comum):
+        
+        experiencias_relevantes.append(experiencia)
+
+print("\n--- Análise de Compatibilidade ---")
+print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
+
+if habilidades_em_comum:
+    print("\n✅ Habilidades correspondentes encontradas na vaga:")
+    for habilidade in sorted(list(habilidades_em_comum)):
+        print(f"- {habilidade.capitalize()}")
+else:
+    print("\n❌ Nenhuma habilidade correspondente encontrada na descrição da vaga.")
 
 
-## Comparar esse lista com as palavras chaves
-## Se tiver iguais puxar o Objeto todo de experiencia
-
-
-
-
-
-
-
-
-#print("\n--- Análise de Compatibilidade ---")
-#print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
-
-#if habilidades_em_comum:
-    #print("\n✅ Habilidades correspondentes encontradas na vaga:")
-    #for habilidade in sorted(list(habilidades_em_comum)):
-        #print(f"- {habilidade.capitalize()}")
-#else:
-    #print("\n❌ Nenhuma habilidade correspondente encontrada na descrição da vaga.")
+print("\n--- Experiências Relevantes Encontradas ---")
+if experiencias_relevantes:
+    for exp in experiencias_relevantes:
+        print(f"✅ Cargo Relevante: {exp['cargo']} na empresa {exp['empresa']}")
+else:
+    print("❌ Nenhuma experiência profissional diretamente relevante foi encontrada.")
