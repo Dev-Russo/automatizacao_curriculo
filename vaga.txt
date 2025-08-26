@@ -1,0 +1,42 @@
+A tecnologia no BTG vem contribuindo com as grandes transformações do banco. Para isso, investimos em tudo que há de mais novo no mercado. Trabalhamos com times ágeis, DevOps com integração contínua, automação de deploy e automação de testes, além do nosso desenvolvimento ser direcionado para arquitetura multicloud. Você vai ter proximidade com o negócio e abertura para trazer novas ideias e soluções. Liberdade para pesquisar e implementar novas linguagens, novos padrões de desenvolvimento e metodologias.
+
+Nosso time é responsável pelo desenvolvimento de soluções para gerenciamento e análise da performance de fundos e carteiras de investimentos, sistemas chamados BTG Solutions e BTG Solutions Analytics; voltados principalmente para área de gestão discricionária do Wealth Management. Somos focados em entrega eficiente e robusta de novas funcionalidades. Todos desenvolvem, testam, discutem e propõem soluções aos mais diversos problemas, sejam relacionados ao negócio ou à tecnologia. Somos meritocráticos com uma equipe versátil. Valorizamos quem tem cabeça de dono, sonha grande e é apaixonado em aprender e ensinar.
+
+No Seu Dia a Dia
+
+Desenvolvimento de software para o gerenciamento de carteiras de investimentos.
+Implementação de modelos de otimização e rebalanceamento de carteiras.
+Implementação de métricas de risco e performance.
+Manipulação e estruturação de dados para disponibilizar informações estratégicas para o negócio.
+Relacionamento próximo com as áreas de negócio e outras equipes de IT.
+Suporte das plataformas para garantir a alta disponibilidade e performance dos sistemas.
+Levantamento de requisitos e proposta de novas soluções para o negócio.
+
+Esperamos De Você
+
+Preferencialmente formação superior completa em engenharia, ciências da computação ou áreas relacionadas.
+Conhecimento de linguagens de programação orientada a objetos e design patterns.
+Desejável conhecimento em SQL Server e serviço REST.
+Python e Docker
+Conhecimentos ou interesse no mercado financeiro.
+Gostar de trabalhar com metodologias ágeis.
+Perfil empreendedor, com alto nível de energia e aptidão para encarar novos desafios.
+Vontade de aprender novas linguagens e tecnologias. Acreditamos em usar a melhor ferramenta para resolver cada problema e o aprendizado contínuo não deve ser um empecilho.
+Inglês intermediário.
+
+Benefícios
+
+Participação nos Lucros e Resultados (PLR);
+Auxílio Alimentação e Refeição;
+Plano Médico;
+Plano Odontológico;
+Auxílio Creche/Babá;
+Vale Transporte;
+WellHub;
+TotalPass;
+Programa de Apoio Pessoal (EAP);
+Planos por adesão como Previdência Privada e Seguro de Vida;
+Desconto em Farmácia;
+Programa de Nutrição;
+Programa de Gestantes;
+Licença Maternidade e Paternidade Estendida – empresa Cidadã.
