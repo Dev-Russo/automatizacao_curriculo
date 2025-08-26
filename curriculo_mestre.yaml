@@ -22,7 +22,7 @@ experiencias:
       - "Desenvolvimento e manutenção de APIs RESTful para o produto principal."
       - "Automação de rotinas de ETL para processamento de dados."
       - "Implementação de testes unitários para garantir a qualidade do código."
-    tags: ["python", "flask", "api rest", "etl", "testes"]
+    tags: ["python", "flask", "api rest", "etl", "testes", "liderança"]
 
   - empresa: "InfoAlto"
     cargo: "Diretor de Produtos"
@@ -30,4 +30,4 @@ experiencias:
     descricao:
       - "Criação de scripts para automação de tarefas internas."
       - "Manutenção de sistemas legados em Django."
-    tags: ["python", "django", "automação"]
+    tags: ["C#", "django", "automação"]

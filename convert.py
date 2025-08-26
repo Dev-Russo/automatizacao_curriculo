@@ -58,8 +58,6 @@ for palavra in tokens:
     if palavra not in lista_stopwords:
         palavras_chave_vaga.append(palavra)
 
-print(f"Palavras Chaves:{palavras_chave_vaga}")
-
 print(f"Palavras-chave encontradas na vaga: {len(palavras_chave_vaga)}")
 
 ## Salva minhas habilidades
@@ -68,12 +66,28 @@ minhas_habilidades = [h['skill'].lower() for h in meu_curriculo['habilidades']]
 ## Compara as habilidades com as palavras-chave da vaga
 habilidades_em_comum = set(palavras_chave_vaga) & set(minhas_habilidades) ## Interseção de Conjuntos
 
-print("\n--- Análise de Compatibilidade ---")
-print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
 
-if habilidades_em_comum:
-    print("\n✅ Habilidades correspondentes encontradas na vaga:")
-    for habilidade in sorted(list(habilidades_em_comum)):
-        print(f"- {habilidade.capitalize()}")
-else:
-    print("\n❌ Nenhuma habilidade correspondente encontrada na descrição da vaga.")
+## Puxar os valores da minha tag para uma lista
+minhas_experiencias = [e['tags'] for e in meu_curriculo['experiencias']]
+print(minhas_experiencias)
+
+
+## Comparar esse lista com as palavras chaves
+## Se tiver iguais puxar o Objeto todo de experiencia
+
+
+
+
+
+
+
+
+#print("\n--- Análise de Compatibilidade ---")
+#print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
+
+#if habilidades_em_comum:
+    #print("\n✅ Habilidades correspondentes encontradas na vaga:")
+    #for habilidade in sorted(list(habilidades_em_comum)):
+        #print(f"- {habilidade.capitalize()}")
+#else:
+    #print("\n❌ Nenhuma habilidade correspondente encontrada na descrição da vaga.")
