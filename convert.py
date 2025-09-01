@@ -84,23 +84,22 @@ for habilidade in minhas_habilidades:
     if habilidade not in habilidades_ordenadas:
         habilidades_ordenadas.append(habilidade)
 
-print("\n--- Análise de Compatibilidade ---")
-print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
-
-if habilidades_em_comum:
-    print("\n✅ Habilidades correspondentes encontradas na vaga:")
-    for habilidade in sorted(list(habilidades_em_comum)):
-        print(f"- {habilidade.capitalize()}")
-else:
-    print("\n❌ Nenhuma habilidade correspondente encontrada na descrição da vaga.")
-
-
-print("\n--- Experiências Relevantes Encontradas ---")
-if experiencias_relevantes:
-    for exp in experiencias_relevantes:
-        print(f"✅ Cargo Relevante: {exp['cargo']} na empresa {exp['empresa']}")
-else:
-    print("❌ Nenhuma experiência profissional diretamente relevante foi encontrada.")
-
 print("\n--- Habilidades em Comum e Ordenadas ---")
 print(habilidades_ordenadas)
+
+print("\nGerando o currículo personalizado...")
+
+nome_arquivo_saida = "curriculo_personalizado.md"
+
+with open(nome_arquivo_saida, 'w', encoding='utf-8') as f:
+    info = meu_curriculo['informacoes_pessoais']
+    f.write(f"# {info['nome']}\n")
+    f.write(f"_{info['email']} | {info['telefone']} | {info['linkedin']}_\n\n")
+
+    f.write("## Resumo Profissional\n")
+    f.write(f"{meu_curriculo['perfil_profissional']}\n\n")
+
+    f.write("## Habilidades\n")
+    for habilidade in habilidades_ordenadas:
+        f.write(f"- {habilidade.capitalize()}\n")
+    f.write("\n")
