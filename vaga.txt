@@ -18,6 +18,7 @@ Preferencialmente formação superior completa em engenharia, ciências da compu
 Conhecimento de linguagens de programação orientada a objetos e design patterns.
 Desejável conhecimento em SQL Server e serviço REST.
 Python e Docker
+Liderança
 Conhecimentos ou interesse no mercado financeiro.
 Gostar de trabalhar com metodologias ágeis.
 Perfil empreendedor, com alto nível de energia e aptidão para encarar novos desafios.

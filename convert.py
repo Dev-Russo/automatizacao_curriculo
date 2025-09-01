@@ -76,6 +76,14 @@ for experiencia in meu_curriculo['experiencias']:
         
         experiencias_relevantes.append(experiencia)
 
+habilidades_ordenadas = []
+for habilidades in habilidades_em_comum:
+    habilidades_ordenadas.append(habilidades)
+
+for habilidade in minhas_habilidades:
+    if habilidade not in habilidades_ordenadas:
+        habilidades_ordenadas.append(habilidade)
+
 print("\n--- Análise de Compatibilidade ---")
 print(f"Minhas habilidades: {', '.join(sorted(minhas_habilidades))}")
 
@@ -93,3 +101,6 @@ if experiencias_relevantes:
         print(f"✅ Cargo Relevante: {exp['cargo']} na empresa {exp['empresa']}")
 else:
     print("❌ Nenhuma experiência profissional diretamente relevante foi encontrada.")
+
+print("\n--- Habilidades em Comum e Ordenadas ---")
+print(habilidades_ordenadas)

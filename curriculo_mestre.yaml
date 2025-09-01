@@ -30,4 +30,4 @@ experiencias:
     descricao:
       - "Criação de scripts para automação de tarefas internas."
       - "Manutenção de sistemas legados em Django."
-    tags: ["C#", "django"]
+    tags: ["C#", "django", liderança"]
