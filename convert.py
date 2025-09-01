@@ -94,7 +94,7 @@ nome_arquivo_saida = "curriculo_personalizado.md"
 with open(nome_arquivo_saida, 'w', encoding='utf-8') as f:
     info = meu_curriculo['informacoes_pessoais']
     f.write(f"# {info['nome']}\n")
-    f.write(f"_{info['email']} | {info['telefone']} | {info['linkedin']}_\n\n")
+    f.write(f"_{info['email']} | {info['telefone']} | {info['linkedin']}\n\n")
 
     f.write("## Resumo Profissional\n")
     f.write(f"{meu_curriculo['perfil_profissional']}\n\n")
@@ -103,3 +103,15 @@ with open(nome_arquivo_saida, 'w', encoding='utf-8') as f:
     for habilidade in habilidades_ordenadas:
         f.write(f"- {habilidade.capitalize()}\n")
     f.write("\n")
+
+    f.write("## Experiências Profissionais\n\n")
+
+    for experiencia in experiencias_relevantes:
+    
+        f.write(f"### {experiencia['cargo']} na {experiencia['empresa']}\n")
+
+        f.write(f"*{experiencia['periodo']}*\n")
+        for ponto_descricao in experiencia['descricao']:
+            f.write(f"- {ponto_descricao}\n")
+        
+        f.write("\n")
