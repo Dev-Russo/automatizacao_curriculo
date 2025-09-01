@@ -61,3 +61,58 @@ E instale com:
 ```bash
 pip install -r requirements.txt
 ```
+d. Baixe os pacotes do NLTK
+Execute o script Python que você já criou para baixar os pacotes punkt e stopwords.
+
+##2️⃣ Configuração
+Antes de rodar, você precisa criar dois arquivos na raiz do projeto: 
+
+####a. curriculo_mestre.yaml 
+Este arquivo contém todas as suas informações. Exemplo:
+```yaml
+informacoes_pessoais:
+  nome: "Seu Nome Completo"
+  email: "seu.email@dominio.com"
+  telefone: "(XX) XXXXX-XXXX"
+  linkedin: "linkedin.com/in/seu-perfil"
+
+resumo_profissional: "Profissional de tecnologia com X anos de experiência em desenvolvimento de software, especializado em soluções backend e automação de processos."
+
+habilidades:
+  - skill: "Python"
+  - skill: "Flask"
+  - skill: "API REST"
+  - skill: "PostgreSQL"
+  - skill: "React"
+  - skill: "Docker"
+
+experiencias:
+  - empresa: "Empresa Tech S.A."
+    cargo: "Desenvolvedor Backend Pleno"
+    periodo: "Jan 2022 - Presente"
+    descricao:
+      - "Desenvolvimento e manutenção de APIs RESTful para o produto principal."
+      - "Automação de rotinas de ETL para processamento de dados."
+    tags: ["python", "flask", "api rest", "etl"]
+
+  - empresa: "Outra Empresa Ltda."
+    cargo: "Desenvolvedor Júnior"
+    periodo: "Fev 2020 - Dez 2021"
+    descricao:
+      - "Criação de scripts para automação de tarefas internas."
+    tags: ["python", "django", "automação"]
+```
+
+####b. vaga.txt
+Copie e cole a descrição completa da vaga para a qual deseja se candidatar.
+
+##3️⃣ Uso
+Com tudo configurado, basta executar o script principal:
+```bash
+python seu_script.py
+```
+Ao final da execução, um novo arquivo chamado:
+```bash
+curriculo_personalizado.md
+```
+será criado na pasta do projeto.
