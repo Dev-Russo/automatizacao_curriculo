@@ -97,7 +97,10 @@ with open(nome_arquivo_saida, 'w', encoding='utf-8') as f:
     f.write(f"_{info['email']} | {info['telefone']} | {info['linkedin']}\n\n")
 
     f.write("## Resumo Profissional\n")
-    f.write(f"{meu_curriculo['perfil_profissional']}\n\n")
+    f.write(f"{meu_curriculo['perfil_profissional']}")
+    for habilidade in habilidades_em_comum:
+        f.write(f" {habilidade.capitalize()}")
+    f.write("\n\n")
 
     f.write("## Habilidades\n")
     for habilidade in habilidades_ordenadas:
